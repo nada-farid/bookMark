@@ -1,0 +1,14 @@
+   /* Global Style */
+  
+   :root {
+
+       /* --main-color:; */
+       --transition: 0.7;
+       --light-color: #fff;
+       --dark-color: #000;
+   }
+
+  *{
+
+    font-family: 'segeo ui light';
+  }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+<body class="bg-dark">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-12">
+                <h1 class=" text-muted border-bottom mb-3 py-3">Bookmarker</h1>
+            </div>
+        </div>
+        <div class="row bg-light w-75 m-auto rounded-3 shadow-lg">
+            <div class="col-md-12">
+                <div class="text-center py-5">
+                    <h2 class="border-bottom">Bookmark your favorite sites</h2>
+                </div>
+                <div class="form text-center mt-5 w-75 m-auto d-flex flex-column  align-items-center">
+                    <label class=" my-3 fw-bold text-uppercase" for="siteName"> Site Name</label>
+                    <input type="text" class=" form-control mb-3" id="siteName" placeholder="Bookmark Name" fdprocessedid="5mvamc">
+                    <h6 class=" text-danger fw-lighter" id="validationName"></h6>
+                    <label class=" my-3 fw-bold text-uppercase" for="siteUrl"> Site URL</label>
+                    <input type="text" class=" form-control mb-3" id="siteUrl" placeholder="Bookmark URL (Ex:google)" fdprocessedid="g28pml">
+                    <h6 class=" text-danger fw-lighter" id="validationUrl"></h6>
+                    <button  class=" btn btn-outline-info btn-sm mb-4" id="addBtn" fdprocessedid="g6j2ef">Add Books</button>
+                    <button title="New Update" class="btn btn-outline-success btn-sm mb-4" style="display:none;" id="btnUpdateNew">Update Books</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="bookmark-container w-75 m-auto my-4 bg-light rounded-3 shadow-lg">
+            <div class="bookmark-info ">
+                <table class=" table text-center">
+                    <tbody id="tablebody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer class=" bg-dark text-center py-5 text-light border-top"> 
+        <h6>Copyright © Nada Farid</h6>
+        <div class="icons">
+            <a target="_blank" href="https://www.linkedin.com/in/nada-farid-5294b2228/" class=" nav-link text-light fab fa-linkedin-in px-3"></a>
+        </div>
+    </footer>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
