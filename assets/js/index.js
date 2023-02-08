@@ -110,3 +110,30 @@ function deleteSite(elemIndex){
    
 }
 
+// search function
+function search(term){
+      var temp = ``
+   for (var i = 0; i < siteList.length; i++) {
+       // condition to take the row which site name only match the tem 
+
+       if(siteList[i].siteName.toLowerCase().includes(term.toLowerCase())){
+
+       temp += `<tr><td>${siteList[i].siteName}</td>
+                    <td><a title="Visit" target="_blank" href="http://www.${siteList[i].siteUrl}.com" class="btn btn-outline-success btn-sm fas fa-eye" id="btnVisit"></a></td>
+                    <td><button title="Edit" onclick="edit(${i})" class="btn btn-outline-warning btn-sm fas fa-pen-to-square" fdprocessedid="7d2j4g"></button></td>
+                    <td><button onclick="deleteSite(${i})" title="Delete" class="btn btn-outline-danger btn-sm fas fa-trash-can" id="btnDelete" fdprocessedid="mk6gkm"></button></td></tr>`
+
+   }
+}
+
+   // push data to the table
+   document.getElementById('tablebody').innerHTML = temp
+}
+
+// call search function when user put any input
+ document.getElementById("searchInput").addEventListener('input',function(){
+
+    search(this.value)
+   
+
+ })
